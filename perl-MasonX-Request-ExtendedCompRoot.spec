@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	MasonX
-%define	pnam	Request-ExtendedCompRoot
+%define		pdir	MasonX
+%define		pnam	Request-ExtendedCompRoot
 Summary:	MasonX::Request::ExtendedCompRoot - extend functionality of Mason's component root
 Summary(pl):	MasonX::Request::ExtendedCompRoot - rozszerzanie funkcjonalno¶ci korzenia komponentów Masona
 Name:		perl-MasonX-Request-ExtendedCompRoot
