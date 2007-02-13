@@ -6,7 +6,7 @@
 %define		pdir	MasonX
 %define		pnam	Request-ExtendedCompRoot
 Summary:	MasonX::Request::ExtendedCompRoot - extend functionality of Mason's component root
-Summary(pl.UTF-8):   MasonX::Request::ExtendedCompRoot - rozszerzanie funkcjonalności korzenia komponentów Masona
+Summary(pl.UTF-8):	MasonX::Request::ExtendedCompRoot - rozszerzanie funkcjonalności korzenia komponentów Masona
 Name:		perl-MasonX-Request-ExtendedCompRoot
 Version:	0.03
 Release:	1
