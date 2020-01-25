@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	MasonX
 %define		pnam	Request-ExtendedCompRoot
 Summary:	MasonX::Request::ExtendedCompRoot - extend functionality of Mason's component root
