@@ -7,13 +7,13 @@
 Summary:	MasonX::Request::ExtendedCompRoot - extend functionality of Mason's component root
 Summary(pl.UTF-8):	MasonX::Request::ExtendedCompRoot - rozszerzanie funkcjonalności korzenia komponentów Masona
 Name:		perl-MasonX-Request-ExtendedCompRoot
-Version:	0.03
-Release:	3
+Version:	0.04
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/MasonX/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	487b2f30bed5462803330ebaff1701cb
+Source0:	https://www.cpan.org/modules/by-module/MasonX/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	ec663a929f1815ab3fe3f1b75f6c4fd3
 URL:		http://search.cpan.org/dist/MasonX-Request-ExtendedCompRoot/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -61,6 +61,10 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
+%dir %{perl_vendorlib}/MasonX/Interp
+%{perl_vendorlib}/MasonX/Interp/ExtendedCompRoot.pm
+%dir %{perl_vendorlib}/MasonX/Lexer
+%{perl_vendorlib}/MasonX/Lexer/ExtendedCompRoot.pm
 %dir %{perl_vendorlib}/MasonX/Request
 %{perl_vendorlib}/MasonX/Request/ExtendedCompRoot.pm
 %dir %{perl_vendorlib}/MasonX/Resolver
