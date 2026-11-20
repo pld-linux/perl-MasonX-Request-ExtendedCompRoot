@@ -8,7 +8,7 @@ Summary:	MasonX::Request::ExtendedCompRoot - extend functionality of Mason's com
 Summary(pl.UTF-8):	MasonX::Request::ExtendedCompRoot - rozszerzanie funkcjonalności korzenia komponentów Masona
 Name:		perl-MasonX-Request-ExtendedCompRoot
 Version:	0.04
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -55,6 +55,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+install -d $RPM_BUILD_ROOT%{perl_vendorlib}/MasonX/Request/ExtendedCompRoot
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -67,6 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/MasonX/Lexer/ExtendedCompRoot.pm
 %dir %{perl_vendorlib}/MasonX/Request
 %{perl_vendorlib}/MasonX/Request/ExtendedCompRoot.pm
+%dir %{perl_vendorlib}/MasonX/Request/ExtendedCompRoot
 %dir %{perl_vendorlib}/MasonX/Resolver
 %{perl_vendorlib}/MasonX/Resolver/ExtendedCompRoot.pm
 %{_mandir}/man3/*
